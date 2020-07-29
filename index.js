@@ -36,6 +36,31 @@ app.get("/cities/state/:state", (req, res) => {
     res.json(cities);
   });
 });
+//query string route
+// app.get("/cities/search", (req, res) => {
+//   if (req.query.city) {
+//     Cities.find({ City: req.query.city }).then((city) => {
+//       res.json(city);
+//     });
+//   } else if (req.query.state) {
+//     Cities.find({ State: req.query.state }).then((cities) => {
+//       res.json(cities);
+//     });
+//   } else if (req.query.District) {
+//     Cities.find({ District: req.query.district }).then((cities) => {
+//       res.json(cities);
+//     });
+//   } else {
+//     Cities.find({}).then((cities) => {
+//       res.json(cities);
+//     });
+//   }
+// });
+// app.get("/cities/search", (req, res) => {
+//   Cities.find({ State: req.query }).then((cities) => {
+//     res.json(req.query);
+//   });
+// });
 
 //update route
 
