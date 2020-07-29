@@ -6,6 +6,26 @@ app.use(bodyParser.json());
 
 //get routes
 
+app.get("/cities/search", (req, res) => {
+  if (req.query.City) {
+    Cities.find({ City: req.query.City }).then((city) => {
+      res.json(city);
+    });
+  } else if (req.query.State) {
+    Cities.find({ State: req.query.State }).then((cities) => {
+      res.json(cities);
+    });
+  } else if (req.query.District) {
+    Cities.find({ District: req.query.District }).then((cities) => {
+      res.json(cities);
+    });
+  } else {
+    Cities.find({}).then((cities) => {
+      res.json(cities);
+    });
+  }
+});
+
 app.get("/", (req, res) => {
   Cities.find({}).then(() => {
     res.redirect("/cities");
@@ -36,26 +56,17 @@ app.get("/cities/state/:state", (req, res) => {
     res.json(cities);
   });
 });
+
 //query string route
+
 // app.get("/cities/search", (req, res) => {
-//   if (req.query.city) {
-//     Cities.find({ City: req.query.city }).then((city) => {
-//       res.json(city);
-//     });
-//   } else if (req.query.state) {
-//     Cities.find({ State: req.query.state }).then((cities) => {
-//       res.json(cities);
-//     });
-//   } else if (req.query.District) {
-//     Cities.find({ District: req.query.district }).then((cities) => {
-//       res.json(cities);
-//     });
-//   } else {
-//     Cities.find({}).then((cities) => {
-//       res.json(cities);
-//     });
-//   }
+//   let queryParams = req.query;
+//   res.json(queryParams);
 // });
+// Cities.find(req.query).then((cities) => {
+
+//  });
+
 // app.get("/cities/search", (req, res) => {
 //   Cities.find({ State: req.query }).then((cities) => {
 //     res.json(req.query);
