@@ -1,0 +1,24 @@
+{
+  "name": "sei38-project6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonyMaddox/sei38-project6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnthonyMaddox/sei38-project6/issues"
+  },
+  "homepage": "https://github.com/AnthonyMaddox/sei38-project6#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.26",
+    "node-fetch": "^2.6.0"
+  }
+}

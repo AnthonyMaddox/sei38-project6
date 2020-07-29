@@ -6,8 +6,8 @@ fetch(url)
   .then((res) => res.json())
   .then((res) => {
     let cities = JSON.stringify(res);
-    console.log(countries)
-    fs.writeFile("./db/data.json", cities, (err) => {
+    console.log(cities);
+    fs.writeFile("./data.json", cities, (err) => {
       if (err) {
         console.log(err);
       } else {

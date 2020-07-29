@@ -3,9 +3,9 @@ const Cities = require("../models/Cities");
 
 const cityData = data.map((item) => {
   const city = {};
-  city.city = item.city;
-  city.state = item.state;
-  city.district = item.district;
+  city.City = item.City;
+  city.State = item.State;
+  city.District = item.District;
   return city;
 });
 console.log(cityData);
