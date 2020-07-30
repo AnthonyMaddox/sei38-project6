@@ -10,7 +10,7 @@
 
 ###### Express, Mongoose, Node, Mongodb, Javascript.
 
-#### URL for all cities:
+#### URL for all cities ###### _endpoint:_
 
 > ###### _endpoint:_ /cities
 
