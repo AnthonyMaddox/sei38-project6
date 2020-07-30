@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
-
-mongoose.connect("mongodb://localhost/indian-cities", {
-  useNewUrlParser: true,
-});
+mongoose.Promise = Promise;
+// mongoose.connect("mongodb://localhost/indian-cities", {
+//   useNewUrlParser: true,
+// });
 let mongoURI = "";
 
 if (process.env.NODE_ENV === "production") {
@@ -10,5 +10,11 @@ if (process.env.NODE_ENV === "production") {
 } else {
   mongoURI = "mongodb://localhost/indian-cities";
 }
+mongoose
+  .connect(mongoURI, { useNewUrlParser: true })
+  .then((instance) =>
+    console.log(`Connected to db: ${instance.connections[0].name}`)
+  )
+  .catch((error) => console.log("Connection failed!", error));
 
 module.exports = mongoose;
