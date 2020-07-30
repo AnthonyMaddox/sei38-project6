@@ -36,42 +36,6 @@ app.get("/cities", (req, res) => {
     res.json(cities);
   });
 });
-app.get("/cities/:id", (req, res) => {
-  Cities.findById(req.params.id).then((city) => {
-    res.json(city);
-  });
-});
-app.get("/cities/city/:city", (req, res) => {
-  Cities.find({ City: req.params.city }).then((city) => {
-    res.json(city);
-  });
-});
-app.get("/cities/district/:district", (req, res) => {
-  Cities.find({ District: req.params.district }).then((cities) => {
-    res.json(cities);
-  });
-});
-app.get("/cities/state/:state", (req, res) => {
-  Cities.find({ State: req.params.state }).then((cities) => {
-    res.json(cities);
-  });
-});
-
-//query string route
-
-// app.get("/cities/search", (req, res) => {
-//   let queryParams = req.query;
-//   res.json(queryParams);
-// });
-// Cities.find(req.query).then((cities) => {
-
-//  });
-
-// app.get("/cities/search", (req, res) => {
-//   Cities.find({ State: req.query }).then((cities) => {
-//     res.json(req.query);
-//   });
-// });
 
 //update route
 

@@ -1,0 +1,22 @@
+These routes were replaced by the queary search route
+
+// app.get("/cities/:id", (req, res) => {
+//   Cities.findById(req.params.id).then((city) => {
+//     res.json(city);
+//   });
+// });
+// app.get("/cities/city/:city", (req, res) => {
+//   Cities.find({ City: req.params.city }).then((city) => {
+//     res.json(city);
+//   });
+// });
+// app.get("/cities/district/:district", (req, res) => {
+//   Cities.find({ District: req.params.district }).then((cities) => {
+//     res.json(cities);
+//   });
+// });
+// app.get("/cities/state/:state", (req, res) => {
+//   Cities.find({ State: req.params.state }).then((cities) => {
+//     res.json(cities);
+//   });
+// });
