@@ -1,4 +1,4 @@
-# Indian Cities REST API (reconstructed)
+# **Indian Cities REST API (reconstructed)**
 
 ##### This is a JSON API with full CRUD functionality that allows users to access a database of Indian cities as well as search all cities by district or state. This project was created for the Software Engineering Immersive Program at General Assembly.
 
@@ -6,13 +6,13 @@
 
 ###### You can either request an array of all cities or search by city, state or district using a query string.
 
-### Technologies Used
+#### Technologies Used:
 
 ###### Express, Mongoose, Node, Mongodb, Javascript.
 
-### URL for all cities:
+#### URL for all cities:
 
-###### _endpoint:_ /cities
+###### -_endpoint:_ /cities
 
 ## CRUD
 
@@ -20,13 +20,13 @@
 
 #### POST Method
 
-###### _endpoint:_ /cities
+###### -_endpoint:_ /cities
 
 ### READ
 
 #### GET Query Request:
 
-###### _endpoint:_ /cities/search
+###### -_endpoint:_ /cities/search
 
 ##### Example Requests:
 
@@ -53,28 +53,28 @@
 
 #### PUT Method
 
-###### _endpoint:_ /cities/:id
+###### -_endpoint:_ /cities/:id
 
 ##### Example Requests:
 
-###### By City: /cities/5f218f90eac1922a081cc953
+###### By City ID: /cities/5f218f90eac1922a081cc953
 
 ### DELETE
 
 #### DELETE Method
 
-###### endpoint: /cities/:id
+###### -_endpoint:_ /cities/:id
 
 ##### Example Requests:
 
-###### By City: /cities/5f218f90eac1922a081cc953
+###### By City ID: /cities/5f218f90eac1922a081cc953
 
 #### Contribution Guidelines:
 
 ###### If you find any errors in the database or want to update, delete, or create a city entry, please submit an issue on this project’s GitHub repo.
 
+##### Link to repo: _https://github.com/AnthonyMaddox/sei38-project6_
+
 #### Credits:
 
 ###### Data on Indian Cities was fetched from the Indian Cities REST api. All knowledge was gained under the study of Noah Clark and Allison Johnson at General Assembly.
-
-##### Link to repo: _https://github.com/AnthonyMaddox/sei38-project6_
