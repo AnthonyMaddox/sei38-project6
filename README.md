@@ -12,7 +12,7 @@
 
 #### URL for all cities:
 
-###### -_endpoint:_ /cities
+###### > _endpoint:_ /cities
 
 ## CRUD
 
@@ -20,13 +20,13 @@
 
 #### POST Method
 
-###### -_endpoint:_ /cities
+###### > _endpoint:_ /cities
 
 ### READ
 
 #### GET Query Request:
 
-###### -_endpoint:_ /cities/search
+###### > _endpoint:_ /cities/search
 
 ##### Example Requests:
 
@@ -53,7 +53,7 @@
 
 #### PUT Method
 
-###### -_endpoint:_ /cities/:id
+###### > _endpoint:_ /cities/:id
 
 ##### Example Requests:
 
@@ -63,7 +63,7 @@
 
 #### DELETE Method
 
-###### -_endpoint:_ /cities/:id
+###### > _endpoint:_ /cities/:id
 
 ##### Example Requests:
 
