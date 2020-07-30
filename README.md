@@ -20,13 +20,13 @@
 
 #### POST Method
 
-> ###### - _endpoint:_ /cities
+> ###### _endpoint:_ /cities
 
 ### READ
 
 #### GET Query Request:
 
-> ###### - _endpoint:_ /cities/search
+> ###### _endpoint:_ /cities/search
 
 ##### Example Requests:
 
