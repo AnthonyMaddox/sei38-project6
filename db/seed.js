@@ -1,5 +1,5 @@
 const data = require("./data.json");
-const Cities = require("../models/Cities");
+const City = require("../models/City");
 
 const cityData = data.map((item) => {
   const city = {};
@@ -10,8 +10,8 @@ const cityData = data.map((item) => {
 });
 console.log(cityData);
 
-Cities.deleteMany({}).then(() => {
-  Cities.create(cityData)
+City.deleteMany({}).then(() => {
+  City.create(cityData)
     .then((cities) => {
       console.log(cities);
       process.exit();

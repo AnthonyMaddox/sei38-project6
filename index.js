@@ -1,5 +1,5 @@
 const app = require("express")();
-const Cities = require("./models/Cities");
+const Cities = require("./models/City");
 
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
