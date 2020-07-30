@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
 mongoose.connect("mongodb://localhost/indian-cities", {
-  useUnifiedTopology: true,
   useNewUrlParser: true,
 });
 let mongoURI = "";
