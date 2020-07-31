@@ -10,27 +10,29 @@
 
 ###### Express, Mongoose, Node, Mongodb, Javascript.
 
-#### URL for all cities ###### _endpoint:_
+#### URL for all cities _endpoint:_
 
-> ###### _endpoint:_ /cities
+> ###### /cities
 
 ## CRUD
 
 ### CREATE
 
-#### POST Method
+#### POST Method _endpoint:_
 
-> ###### _endpoint:_ /cities
+> ###### /cities
 
 ### READ
 
-#### GET Query Request:
+#### GET Query Request _endpoint:_
 
-> ###### _endpoint:_ /cities/search
+> ###### /cities/search
 
 ##### Example Requests:
 
-###### By City: /cities/search?City=Ganganagar
+##### By City:
+
+###### /cities/search?City=Ganganagar
 
 ###### Example Response:
 
@@ -45,29 +47,37 @@
 
 ```
 
-###### By State: /cities/search?State=Rajasthan
+##### By State:
 
-###### By District: /cities/search?District=Porbandar
+###### /cities/search?State=Rajasthan
 
-### UPDATE
+##### By District:
+
+###### /cities/search?District=Porbandar
+
+### UPDATE Method _endpoint:_
 
 #### PUT Method
 
-> ###### _endpoint:_ /cities/:id
+> ###### /cities/:id
 
 ##### Example Requests:
 
-###### By City ID: /cities/5f218f90eac1922a081cc953
+##### By City ID:
+
+###### /cities/5f218f90eac1922a081cc953
 
 ### DELETE
 
-#### DELETE Method
+#### DELETE Method _endpoint:_
 
-> ###### _endpoint:_ /cities/:id
+> ###### /cities/:id
 
 ##### Example Requests:
 
-###### By City ID: /cities/5f218f90eac1922a081cc953
+##### By City ID:
+
+###### /cities/5f218f90eac1922a081cc953
 
 #### Contribution Guidelines:
 
