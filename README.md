@@ -2,16 +2,6 @@
 
 ##### This is a JSON API with full CRUD functionality that allows users to access a database of Indian cities as well as search all cities by district or state. This project was created for the Software Engineering Immersive Program at General Assembly.
 
-###### UML Diagram
-
-```mermaid
-F[External api] -- node-fetch --> B((Node JS))
-A[Express] -- CRUD --> C
-C(MongoDB) -- CRUD --> A
-B -- modeling --> D{mongoose}
-D -- seeding --> C
-```
-
 ## Features:
 
 ###### You can either request an array of all cities or search by city, state or district using a query string.
