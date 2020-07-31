@@ -1,6 +1,7 @@
 const app = require("express")();
 const Cities = require("./models/City");
-
+const cors = require("cors")
+app.use(cors())
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 
