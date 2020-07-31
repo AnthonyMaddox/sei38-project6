@@ -4,7 +4,16 @@ const Cities = require("./models/City");
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 
-//get routes
+//create post route
+
+app.post("/cities", (req, res) => {
+   console.log("req.body: ", req.body);
+   Cities.create(req.body).then((city) => {
+     res.json(city);
+   });
+ });
+
+//read get routes
 
 app.get("/cities/search", (req, res) => {
   if (req.query.City) {
@@ -37,7 +46,7 @@ app.get("/cities", (req, res) => {
   });
 });
 
-//update route
+//update put route
 
 app.put("/cities/:id", (req, res) => {
   Cities.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true }).then(
@@ -45,15 +54,6 @@ app.put("/cities/:id", (req, res) => {
       res.json(city);
     }
   );
-});
-
-//post route
-
-app.post("/cities", (req, res) => {
-  console.log("req.body: ", req.body);
-  Cities.create(req.body).then((city) => {
-    res.json(city);
-  });
 });
 
 //delete route
@@ -71,7 +71,5 @@ app.set("port", process.env.PORT || 4000);
 app.listen(app.get("port"), () => {
    console.log(`✅ PORT: ${app.get("port")} 🌟`);
  });
- 
-// app.listen(4000, () => {
-//   console.log("listening on port 4000... indian cities");
-// });
+
+

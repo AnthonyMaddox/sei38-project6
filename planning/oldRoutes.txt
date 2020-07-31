@@ -20,3 +20,13 @@ These routes were replaced by the queary search route
 //     res.json(cities);
 //   });
 // });
+
+from connection.js
+// mongoose.connect("mongodb://localhost/indian-cities", {
+//   useNewUrlParser: true,
+// });
+
+from index.js
+// app.listen(4000, () => {
+//   console.log("listening on port 4000... indian cities");
+// });
