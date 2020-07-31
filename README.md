@@ -8,7 +8,7 @@
 
 #### Technologies Used:
 
-###### Express, Mongoose, Node, Mongodb, Javascript.
+###### Express, Mongoose, NodeJS, Mongodb.
 
 #### URL for all cities:
 
