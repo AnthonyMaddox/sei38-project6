@@ -1,18 +1,19 @@
 const app = require("express")();
 const Cities = require("./models/City");
-const cors = require("cors")
-app.use(cors())
+const cors = require("cors");
+app.use(cors());
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 
 //create post route
 
 app.post("/cities", (req, res) => {
-   console.log("req.body: ", req.body);
-   Cities.create(req.body).then((city) => {
-     res.json(city);
-   });
- });
+  console.log("req.body: ", req.body);
+  Cities.create(req.body).then((city) => {
+    console.log(req);
+    res.json(city);
+  });
+});
 
 //read get routes
 
@@ -70,7 +71,5 @@ app.delete("/cities/:id", (req, res) => {
 app.set("port", process.env.PORT || 4000);
 
 app.listen(app.get("port"), () => {
-   console.log(`✅ PORT: ${app.get("port")} 🌟`);
- });
-
-
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
+});
