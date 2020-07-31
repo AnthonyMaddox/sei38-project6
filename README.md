@@ -10,9 +10,9 @@
 
 ###### Express, Mongoose, Node, Mongodb, Javascript.
 
-#### URL for all cities _endpoint:_
+#### URL for all cities:
 
-> ###### /cities
+> ###### https://indian-cities-api.herokuapp.com/cities
 
 ## CRUD
 
