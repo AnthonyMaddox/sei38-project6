@@ -55,9 +55,9 @@
 
 ###### /cities/search?District=Porbandar
 
-### UPDATE Method _endpoint:_
+### UPDATE
 
-#### PUT Method
+#### PUT Method _endpoint:_
 
 > ###### /cities/:id
 
