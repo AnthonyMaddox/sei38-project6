@@ -5,14 +5,12 @@
 ###### UML Diagram
 
 ```mermaid
-
 graph LR
 F[External api] -- node-fetch --> B((Node JS))
 A[Express] -- CRUD --> C
 C(MongoDB) -- CRUD --> A
 B -- modeling --> D{mongoose}
 D -- seeding --> C
-
 ```
 
 ## Features:
